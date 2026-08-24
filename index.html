@@ -57,7 +57,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="demo.css" />
 
     <script type="application/ld+json">
       {
@@ -195,8 +194,8 @@
             class="logo__img"
             src="assets/logo.webp"
             alt="Sweet Bonanza Strategy"
-            width="244"
-            height="196"
+            width="516"
+            height="276"
           />
         </a>
         <nav class="nav__links" aria-label="Primary">
@@ -318,17 +317,16 @@
             play.
           </p>
 
-          <figure class="media-slot">
-            <div class="media-slot__box">
-              [SCREENSHOT NEEDED: base game grid, captured from the licensed
-              provider demo] &middot; assets/sweet-bonanza-slot-grid.webp
-              &middot; WebP 1200x675, under 150 KB
-            </div>
-            <figcaption>
-              The Sweet Bonanza grid pays matching symbols anywhere, not on
-              paylines.
-            </figcaption>
-          </figure>
+          <figure class="shot">
+              <img
+                src="assets/sweet-bonanza-slot-grid.webp"
+                alt="Sweet Bonanza slot grid showing candy and fruit symbols during a tumble"
+                width="1200"
+                height="830"
+                loading="lazy"
+              />
+              <figcaption>The Sweet Bonanza grid pays matching symbols anywhere, not on paylines.</figcaption>
+            </figure>
 
           <section id="what-it-is">
             <h2>What Sweet Bonanza is</h2>
@@ -362,26 +360,6 @@
               values are shown in the game's own information panel, which is the
               version your operator has licensed.
             </p>
-            <figure class="media-slot">
-              <div class="media-slot__box">
-                [SCREENSHOT NEEDED: two-frame before and after of a tumble, from
-                the demo] &middot; assets/sweet-bonanza-tumble-sequence.webp
-                &middot; WebP 1200x675, under 150 KB
-              </div>
-              <figcaption>
-                One paid spin can resolve into a chain of tumble wins.
-              </figcaption>
-            </figure>
-            <figure class="media-slot">
-              <div class="media-slot__box">
-                [SCREENSHOT NEEDED: scatter trigger moment, from the demo]
-                &middot; assets/sweet-bonanza-lollipop-scatter.webp &middot;
-                WebP 1200x675, under 150 KB
-              </div>
-              <figcaption>
-                The lollipop scatter is the free spins trigger.
-              </figcaption>
-            </figure>
           </section>
 
           <section id="provider">
@@ -415,13 +393,6 @@
               and bonus buy are offered at all, differ by operator and by
               market, so read them in the game before you set a budget.
             </p>
-            <figure class="media-slot">
-              <div class="media-slot__box">
-                Custom illustration, built from the how-to section on this page
-                &middot; assets/sweet-bonanza-how-to-play-steps.webp &middot;
-                WebP 1200x800, under 120 KB
-              </div>
-            </figure>
           </section>
 
           <section id="demo">
@@ -439,19 +410,23 @@
               <figcaption class="demo__bar">
                 <span class="demo__live"
                   ><span class="demo__dot" aria-hidden="true"></span
-                  ><span>Demo</span></span
+                  ><span>Live Demo</span></span
                 >
+                <span class="demo__url">demogamesfree.pragmaticplay.net</span>
               </figcaption>
-              <div class="ftdemo-poster">
-                <button type="button" class="btn btn--demo js-demo-open">
-                  <span aria-hidden="true">&#9654;</span>
-                  <span>Play the free demo</span>
-                </button>
+              <div class="demo__video">
+                <iframe
+                  data-src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=en&amp;cur=USD&amp;gameSymbol=vs20fruitsw&amp;websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net"
+                  title="Sweet Bonanza free demo"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
               </div>
             </figure>
             <p>
               The demo above is the official Pragmatic Play free-play build,
-              loaded straight from the provider and only when you open it.
+              loaded straight from the provider. It starts loading when you
+              scroll it into view, so it costs nothing until you reach it.
             </p>
           </section>
 

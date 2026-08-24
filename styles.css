@@ -700,9 +700,14 @@ iframe {
   font-family: var(--f-mono);
   color: var(--muted);
 }
+/* padding-bottom sets the desktop aspect ratio (16:9). It exists in avia-landing but
+   was dropped from the icf-landing copy, which has no inline demo. Without it the
+   container collapses to zero height and the absolutely positioned iframe disappears.
+   The two media queries below override it with real heights on tablet and phone. */
 .demo__video {
   position: relative;
   width: 100%;
+  padding-bottom: 56.25%;
 }
 .demo__video iframe {
   position: absolute;
