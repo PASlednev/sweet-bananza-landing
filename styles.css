@@ -1512,17 +1512,21 @@ iframe {
   height: 32px;
   width: auto;
 }
-/* Sweet Bonanza: the Pragmatic Play lockup is ~2.2:1, not a wide banner like the
-   trust badges, so at icf's 40px it reads much smaller than the badges next to it.
-   Raised so the wordmark matches their text size. Width follows the aspect ratio.
-   The lockup also carries a crown with empty space above it, which puts its visual
-   mass at 65% of the artwork height instead of 50%. Flexbox centres the BOX, so the
-   logo reads as sitting ~10px low next to the text-only badges. translateY pulls the
-   ink back onto their optical centre line without touching layout. Recompute as
-   (0.65 - 0.5) * height if the height above changes. */
+/* Sweet Bonanza: the provider slot runs at 64px, not icf's 40px. Both providers used
+   on this site are ~2.2-2.5:1 lockups rather than wide banners like the trust badges,
+   so at 40px they read much smaller than the badges beside them. Width follows the
+   aspect ratio of whichever logo sits here. */
 .footer__logo--provider img {
   height: 64px;
-  transform: translateY(-10px);
+}
+/* Optical alignment, keyed to the Pragmatic Play artwork rather than to the slot:
+   that lockup carries a crown with empty space above it, so its visual mass sits at
+   65% of the artwork height instead of 50%. Flexbox centres the BOX, so the wordmark
+   reads as sitting low next to the text-only badges. -15% is (0.65 - 0.5) and, being
+   a percentage of the element's own height, it stays correct at any size. The Gaming
+   Realms lockup is centred at 50% and needs no nudge. */
+.footer__logo img[src$="pragmatic-play-logo.svg"] {
+  transform: translateY(-15%);
 }
 .footer__logo--tall img {
   height: 44px;
