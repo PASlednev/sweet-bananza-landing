@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sweetbonanzastrategy.com/sitemap.xml
+Sitemap: https://sweetbonanzagaming.com/sitemap.xml
